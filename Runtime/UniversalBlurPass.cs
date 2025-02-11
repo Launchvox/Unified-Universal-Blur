@@ -12,7 +12,7 @@ namespace Unified.UniversalBlur.Runtime
         private static readonly int m_KawaseOffsetID = Shader.PropertyToID("_KawaseOffset");
         private static readonly int m_globalFullScreenBlurTexture = Shader.PropertyToID("_GlobalFullScreenBlurTexture");
         
-        private ProfilingSampler m_ProfilingSampler = new(k_PassName);
+        private ProfilingSampler m_ProfilingSampler = new ProfilingSampler(k_PassName);
         
         private BlurPassData _blurPassData;
         private int renderTextureId1;
