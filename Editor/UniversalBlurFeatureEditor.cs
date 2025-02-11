@@ -15,7 +15,7 @@ namespace Unified.UniversalBlur.Editor
     public class UniversalBlurFeatureEditor : UnityEditor.Editor
     {
         private UniversalBlurFeature m_AffectedFeature;
-        private EditorPrefBool m_ShowAdditionalProperties;
+        private bool m_ShowAdditionalProperties;
         private int m_PassIndexToUse = 0;
 
         /// <summary>
