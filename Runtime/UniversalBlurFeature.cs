@@ -42,7 +42,7 @@ namespace Unified.UniversalBlur.Runtime
         private Material _material;
         private UniversalBlurPass _fullScreenPass;
         private bool _injectedBeforeTransparents;
-        private float _renderScale; 
+        private float _renderScale = 1.0f; 
 
         /// <inheritdoc/>
         public override void Create()
@@ -63,11 +63,11 @@ namespace Unified.UniversalBlur.Runtime
             _fullScreenPass.ConfigureInput(modifiedRequirements);
         }
 
-        public override void OnCameraPreCull(ScriptableRenderer renderer, in CameraData cameraData)
+        /*public override void OnCameraPreCull(ScriptableRenderer renderer, in CameraData cameraData)
         {
             base.OnCameraPreCull(renderer, in cameraData);
             _renderScale = cameraData.renderScale;
-        }
+        }*/
 
         /// <inheritdoc/>
         public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData)
