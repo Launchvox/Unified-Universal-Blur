@@ -24,14 +24,14 @@ namespace Unified.UniversalBlur.Editor
         /// </summary>
         public bool showAdditionalProperties
         {
-            get => m_ShowAdditionalProperties.value;
+            get => m_ShowAdditionalProperties;
             set
             {
-                if (value != m_ShowAdditionalProperties.value)
+                if (value != m_ShowAdditionalProperties)
                 {
                     m_PassIndexToUse = 0;
                 }
-                m_ShowAdditionalProperties.value = value;
+                m_ShowAdditionalProperties = value;
             }
         }
 
